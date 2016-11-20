@@ -1,7 +1,7 @@
 <?php
 // Configure your number Prefix and Recipient here
 $numberPrefix = '[Contact via website]';
-$emailTo = 'allesneu@onoundkatrinheiraten.de';			// change to your email
+$emailTo = 'your-email@gmail.com';			// change to your email
 $errors = array();							// array to hold validation errors
 $data = array();							// array to pass back data
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -28,8 +28,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 		$body = '
 			<strong>Name: </strong>'.$name.'<br />
 			<strong>Email: </strong>'.$email.'<br />
-			<strong>Anzahl an Gästen: </strong>'.$number.'<br />
-			<strong>Ernährungsweise: </strong>'.$mySelect.'<br />
+			<strong>Phone number: </strong>'.$number.'<br />
+			<strong>Select: </strong>'.$mySelect.'<br />
 		';
 		$headers  = "MIME-Version: 1.1" . PHP_EOL;
 		$headers .= "Content-type: text/html; charset=utf-8" . PHP_EOL;
