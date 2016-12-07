@@ -106,6 +106,7 @@ section {
 	height: 32px;
 	background: url(../img/bookingcom.png);
 	top:13px;
+	transition: all 0.5s;
 }
 .booking:hover{
 	background: url(../img/bookingcom_high.png);
@@ -464,6 +465,8 @@ nav.navbar.navbar-default.pink-color .navbar-nav li a:hover:after {
 }
 .logo img {
 	padding-top: 6px;
+	margin-left: 40%;
+	margin-right: auto;
 }
 /* -3.2. Main section
 -------------------------------------------------------------- */

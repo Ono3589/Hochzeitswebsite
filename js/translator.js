@@ -7,6 +7,6 @@ angular.module('wedding')
         $translateProvider.translations('de', DE_KEYS);
         $translateProvider.translations('it', IT_KEYS);
         $translateProvider.preferredLanguage(navigator.language);  // returns "de"
-        // $translateProvider.determinePreferredLanguage();
+        $translateProvider.fallbackLanguage('de');
     })
 ;

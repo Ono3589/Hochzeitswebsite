@@ -1,14 +1,14 @@
 var IT_KEYS = {
-    SITE_title: 'Tutto nuovo',
+    SITE_title: 'tutto nuovo',
     SITE_headline: '',
 
-    NAV_home: 'Home',
-    NAV_about: 'Chi siamo',
+    NAV_home: 'home',
+    NAV_about: 'chi siamo',
     NAV_story: 'storia d\'amore',
-    NAV_gallery: 'Galleria',
+    NAV_gallery: 'galleria',
     NAV_agenda: 'routine quotidiana',
-    NAV_hotel: 'Alloggi',
-    NAV_location: 'Posizione',
+    NAV_hotel: 'alloggi',
+    NAV_location: 'località',
 
     MAIN_alles: 'Tutto',
     MAIN_neu: 'Nuovo',
