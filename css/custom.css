@@ -1,0 +1,14 @@
+.lang-switch {
+    position: fixed;
+    top: 80px;
+    left: 0;
+}
+
+.lang-switch > div {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: white;
+    color: red;
+    font-size: 18px;
+}

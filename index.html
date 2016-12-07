@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" ng-app="wedding" ng-controller="weddingCtrl">
 <!-- Head -->
 	<head>
 		<meta charset="utf-8">
 		<meta name="description" content="">
 		<meta name="author" content="FairyTheme">
-		<title>Alles Neu</title>
+		<title>{{'SITE_title' | translate}}</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<meta name=viewport content="width=device-width, initial-scale=1">
@@ -21,6 +21,11 @@
 			<div class="icon">
 				<img src="img/hearts.svg" alt="hearts" />
 			</div>
+		</div>
+		<!-- lang switch -->
+		<div class="lang-switch">
+			<div ng-click="switchLang('de')">DE</div>
+			<div ng-click="switchLang('it')">IT</div>
 		</div>
 		<!-- Header and Navigation -->
 		<header>
@@ -38,14 +43,15 @@
 						</a>
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#home" class="page-scroll">Home</a></li>
-							<li><a href="#about" class="page-scroll">Über uns</a></li>
-							<li><a href="#love-story" class="page-scroll">Liebesgeschichte</a></li>
-							<li><a href="#schedule" class="page-scroll">Tagesablauf</a></li>
-							<li><a href="#gallery" class="page-scroll">Galerie</a></li>
-							<li><a href="#dorms" class="page-scroll">Unterkünfte</a></li>
-							<li><a href="#location" class="page-scroll">Location</a></li>
+							<li><a href="#home" class="page-scroll">{{'NAV_home' | translate}}</a></li>
+							<li><a href="#about" class="page-scroll">{{'NAV_about' | translate}}</a></li>
+							<li><a href="#love-story" class="page-scroll">{{'NAV_story' | translate}}</a></li>
+							<li><a href="#schedule" class="page-scroll">{{'NAV_agenda' | translate}}</a></li>
+							<li><a href="#gallery" class="page-scroll">{{'NAV_gallery' | translate}}</a></li>
+							<li><a href="#dorms" class="page-scroll">{{'NAV_hotel' | translate}}</a></li>
+							<li><a href="#location" class="page-scroll">{{'NAV_location' | translate}}</a></li>
 						</ul>
 					</div>
 				</div>
@@ -63,13 +69,13 @@
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#home" class="page-scroll">Home</a></li>
-							<li><a href="#about" class="page-scroll">Über uns</a></li>
-							<li><a href="#love-story" class="page-scroll">Liebesgeschichte</a></li>
-							<li><a href="#schedule" class="page-scroll">Tagesablauf</a></li>
-							<li><a href="#gallery" class="page-scroll">Galerie</a></li>
-							<li><a href="#dorms" class="page-scroll">Unterkünfte</a></li>
-							<li><a href="#location" class="page-scroll">Location</a></li>
+							<li><a href="#home" class="page-scroll">{{'NAV_home' | translate}}</a></li>
+							<li><a href="#about" class="page-scroll">{{'NAV_about' | translate}}</a></li>
+							<li><a href="#love-story" class="page-scroll">{{'NAV_story' | translate}}</a></li>
+							<li><a href="#schedule" class="page-scroll">{{'NAV_agenda' | translate}}</a></li>
+							<li><a href="#gallery" class="page-scroll">{{'NAV_gallery' | translate}}</a></li>
+							<li><a href="#dorms" class="page-scroll">{{'NAV_hotel' | translate}}</a></li>
+							<li><a href="#location" class="page-scroll">{{'NAV_location' | translate}}</a></li>
 						</ul>
 					</div>
 				</div>
@@ -79,8 +85,8 @@
 		<section id="container" class="main">
 			<div class="main-content">
 				<div class="big-logo">
-					<div >Alles</div>
-					<h1>Neu</h1>
+					<div>{{'MAIN_alles' | translate}}</div>
+					<h1>{{'MAIN_neu' | translate}}</h1>
 					<h2>Katrin & Ono</h2>
 				</div>
 			</div>
@@ -89,33 +95,33 @@
 		<section id="about" class="about-us">
 			<div class="container">
 				<div class="row">
-					<h2 class="text-center">Braut & Bräutigam</h2>
+					<h2 class="text-center">{{'ABOUT_braut' | translate}} & {{'ABOUT_braeutigam' | translate}}</h2>
 					<div class="devider">
 						<img src="img/devider.png" alt="devider">
 					</div>
-					<p class="intro-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, doloribus ab. Aliquid incidunt quibusdam aut nisi dolores</p>
+					<p class="intro-text text-center">{{'ABOUT_intro' | translate}}</p>
 				</div>
 				<div class="row groom-bride">
 					<div class="col-sm-4 text-right">
-						<h3>Bräutigam</h3>
+						<h3>{{'ABOUT_braeutigam' | translate}}</h3>
 						<p>Onofrio Di Franco</p>
 					</div>
 					<div class="col-sm-4 text-center">
 						<img src="img/about-us.png" alt="about-us">
 					</div>
 					<div class="col-sm-4">
-						<h3>Braut</h3>
+						<h3>{{'ABOUT_braut' | translate}}</h3>
 						<p>Katrin Hammer</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-6 text-center">
-						<h3>Katrin über Ono</h3>
-						<p>“ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla con sequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue ”</p>
+						<h3>Katrin {{'ABOUT_ueber' | translate}} Ono</h3>
+						<p>{{'ABOUT_she_him' | translate}}</p>
 					</div>
 					<div class="col-sm-6 text-center">
-						<h3>Ono über Katrin</h3>
-						<p>“ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur rid iculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla con sequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue ”</p>
+						<h3>Ono {{'ABOUT_ueber' | translate}} Katrin</h3>
+						<p>{{'ABOUT_he_her' | translate}}</p>
 					</div>
 				</div>
 			</div>
@@ -151,17 +157,15 @@
 		<!-- Love story -->
 		<section id="love-story" class="love-story text-center">
 			<div class="container">
-				<h2>Die Liebesgeschichte</h2>
-				<h3>So kam es, dass wir entschieden zusammen zu sein <br> und zwar <span>für immer!</span></h3>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo rhoncus ut, imperdiet a, venenatis vitae, justo.
-				Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
-				Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. </p>
+				<h2>{{'NAV_story' | translate}}</h2>
+				<h3 ng-bind-html="STORY_intro"></h3>
+				<p>{{'STORY_desc' | translate}}</p>
 			</div>
 		</section>
 		<!-- Events -->
 		<section id="schedule" class="events">
 			<div class="container">
-				<h2 class="text-center">Tagesablauf</h2>
+				<h2 class="text-center">{{'NAV_agenda' | translate}}</h2>
 				<div class="devider">
 					<img src="img/devider.png" alt="devider">
 				</div>
@@ -374,6 +378,7 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/vendor/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/custom.css">
 		<link rel="stylesheet" href="css/vendor/lightbox.min.css">
 		<!-- Libraries -->
 		<script src="js/vendor/jquery.min.js"></script>
@@ -385,6 +390,14 @@
 		<script src="js/vendor/jquery.easing.min.js"></script>
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
 		<script src="js/vendor/jquery.firefly.js"></script>
+
+		<script src="js/vendor/angular.min.js"></script>
+		<script src="js/vendor/angular-translate.min.js"></script>
+		<script src="js/ng-app.js"></script>
+		<script src="js/translator.js"></script>
+		<script src="js/lang/de.js"></script>
+		<script src="js/lang/it.js"></script>
+
 		<!-- Main -->
 		<script src="js/main.js"></script>
 		<!-- Google map -->
