@@ -1,14 +1,22 @@
 .lang-switch {
+    border: 1px solid dimgray;
+    left: 0;
     position: fixed;
     top: 80px;
-    left: 0;
 }
 
 .lang-switch > div {
-    width: 30px;
+    background: white;
+    color: dimgray;
+    font-size: 18px;
     height: 30px;
     line-height: 30px;
-    background: white;
-    color: red;
-    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 30px;
+}
+
+.lang-switch > div.active {
+    background: dimgray;
+    color: white;
 }

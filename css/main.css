@@ -100,6 +100,16 @@ section {
 	}
 }
 /* Social icons */
+.booking{
+	position: relative;
+	width:32px;
+	height: 32px;
+	background: url(../img/bookingcom.png);
+	top:13px;
+}
+.booking:hover{
+	background: url(../img/bookingcom_high.png);
+}
 .theme-color .social-icons i.fa {
 	color: #fff;
 	border-color: #fff;
@@ -728,7 +738,7 @@ nav.navbar.navbar-default.pink-color .navbar-nav li a:hover:after {
 }
 .timeline li {
 	float: left;
-	width: 25%;
+	width: 20%;
 	padding-top: 30px;
 	position: relative;
 }
@@ -923,6 +933,48 @@ select option {
 	height: 337px;
 	margin-left: -32px;
 }
+
+/* -3.11. Unterkünfte
+-------------------------------------------------------------- */
+.img-container{
+	width:300px;
+	height:200px;	
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+}
+.img-dorms{
+	position: relative;
+	transition: all .2s ease-in-out;
+	text-align: middle;
+}
+.overlay-text{
+	width: 300px;
+	height: 60px;
+	position: absolute;
+	color: white;	
+	z-index: 1;
+	text-shadow: 0.2px 0.2px #000;
+	background-color: rgba(0, 0, 0, 0.4)
+	
+}
+.img-dorms:hover{
+	transform: scale(1.1);
+}
+@media screen and (max-width: 767px) {
+	.img-container{
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
+}
+.do-name {
+	font-family: "Playfair Display", serif;
+	font-size: 1.125em;
+	padding-bottom: 20px;
+}
+
 /* -3.11. Location
 -------------------------------------------------------------- */
 .location h2 {
@@ -1191,9 +1243,13 @@ footer p {
 }
 /* 5. Theme color
 ---------------------------------------------------------------*/
+<<<<<<< HEAD
 .theme-color {
 	/* Theme colors */
 }
+=======
+
+>>>>>>> 6e0955f6e8b5d16f11a27739c518aedf0bbcaf7f
 .theme-color.grey-pink {
 	background: #828a95;
 }

@@ -109,7 +109,7 @@ function initializeClock(id, endtime) {
 	var timeinterval = setInterval(updateClock, 1000);
 }
 // set your wedding date here
-var deadline = 'December 17 2016 17:30:00 GMT+0300';
+var deadline = 'August 04 2017 14:00:00 GMT+0100';
 initializeClock('timer', deadline);
 /* 4. Owl Gallery
 ==================================*/
@@ -190,18 +190,47 @@ $('.select-wrap').on('click', 'select', function() {
 });
 /* 7. Map
 =========================================*/
+/* 7. Map
+=========================================*/
 var map;
 function initMap() {
-	map = new google.maps.Map(document.getElementById('map_canvas'), {
-		center: {lat: 40.89, lng: -73.98},
-		zoom: 13,
+	map = new google.maps.Map(document.getElementById('map_canvas'),
+	{
+		center: {lat: 52.12561, lng: 11.63115},
+		zoom: 12,
 		scrollwheel: false,
-		mapTypeControl: false
+		mapTypeControl: false,
+		draggable:true,
+		clickable:true
 	});
-	var image = 'img/point.png';
+	var image1 = 'img/point_church.png';
+	var image2 = 'img/point.png';
 	var beachMarker = new google.maps.Marker({
-		position: {lat: 40.89, lng: -73.98},
+		position: {lat: 52.12561, lng: 11.63115},
 		map: map,
-		icon: image
+		icon: image1
+
+	});
+		var beachMarker2 = new google.maps.Marker({
+		position: {lat:52.15361, lng:11.678902},
+		map: map,
+		icon: image2
 	});
 }
+	function newLocation(newLat,newLng)
+	{
+		map.setCenter({
+			lat : newLat,
+			lng : newLng
+		});
+		map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, ZOOM_FACTOR))
+	}
+ 	$("#dieparty").on('click', function ()
+    {
+	  newLocation(52.15361,11.678902);
+	});
+  
+	$("#diekirche").on('click', function ()
+    {
+	  newLocation(52.12561,11.63115);
+	});
